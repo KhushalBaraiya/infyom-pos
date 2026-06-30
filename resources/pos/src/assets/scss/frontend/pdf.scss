@@ -1,0 +1,39 @@
+@import "../components/variables";
+
+.print-data {
+    margin: 0 !important;
+    table {
+        margin: 0 !important;
+        tr {
+            margin: 0 !important;
+            th {
+                font-size: 12px !important;
+            }
+            td {
+                margin: 0 !important;
+                border: 0;
+                font-size: 14px !important;
+                padding-right: 0;
+                padding-left: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+.print-data[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+
+    .d-flex {
+        flex-direction: row-reverse;
+    }
+
+    span, p, td, th {
+        text-align: right !important;
+    }
+
+    .text-end {
+        text-align: left !important;
+    }
+}

@@ -1,0 +1,174 @@
+@import "../components/variables";
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: $primaryFont;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.313rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $page-body-bg;
+}
+
+h1, h2 {
+    color: $gray-900;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.wrapper {
+    @media (min-width: 1200px) {
+        transition: padding-left 0.3s ease;
+        padding-left: 16.563rem;
+    }
+}
+
+.theme-wrapper {
+    @media (min-width: 1200px) {
+        padding-top: 75px;
+    }
+}
+
+.collapsed-menu {
+    .wrapper {
+        padding-left: 5rem;
+    }
+}
+
+.icon-label {
+    width: 20px;
+    height: 20px;
+}
+
+.height-270 {
+    height: 270px;
+}
+
+.inner-scroll {
+    overflow-x: auto;
+}
+
+.box-shadow-none {
+    box-shadow: none;
+}
+
+.shadow-md {
+    box-shadow: $theme-box-shadow;
+}
+
+.width-540 {
+    max-width: 540px;
+    width: 100%;
+}
+
+.width-320 {
+    width: 320px;
+}
+
+.min-width-220 {
+    min-width: 220px;
+}
+
+.line {
+    width: calc(100% - 26px);
+    margin: auto;
+    background-color: $gray-300;
+    opacity: 1;
+}
+
+.custom-responsive .table-responsive{
+    overflow-x: unset !important;
+}
+.delete-warning-modal {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  width: 520px;
+  margin: auto;
+  font-family: "Inter", Arial, sans-serif;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  position: relative; // required for absolute close icon
+
+  // top right close icon
+  .close-icon-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+
+    &:hover {
+      color: #444;
+    }
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 40px;
+    margin-bottom: 6px;
+
+    h3 {
+      margin: 0;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  // Scrolling area
+  .item-scroll {
+    max-height: 160px;
+    overflow-y: auto;
+    margin-bottom: 18px;
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+
+      li {
+        margin-bottom: 6px;
+        font-size: 15px;
+        list-style: disc;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      padding: 7px 22px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #cdd3dd;
+      background: #f8f9fb;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      &:hover {
+        background: #eef1f6;
+      }
+    }
+  }
+}
